@@ -1,0 +1,18 @@
+use testdb;
+
+drop table 학과;
+
+CREATE TABLE 학과(
+	학과번호 int			NOT NULL,
+    학과명	varchar(50) ,
+    PRIMARY KEY(학과번호)
+
+    );
+  
+ -- 데이터 입력 
+INSERT INTO 학과 VALUES(1,'컴소');
+INSERT INTO 학과 VALUES(2,'컴정');
+INSERT INTO 학과 VALUES(3,'인공');
+
+-- 데이터 조회
+select * from 학과;
